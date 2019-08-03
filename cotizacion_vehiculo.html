@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cotizacion de Vehiculo</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <script type="text/javascript" src="Js/validar.js"></script>
+    <style>
+        body { background-color: rgb(170, 156, 156); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cotizacion de Vehiculo</h1><a href="index.html"><button><E>REGRESO A MENU</E></button></a>
+        </div>
+    </header>
+    <form align="center" id="formulario" name="formulario" method="post" action="#">
+        <label for="codigo">Codigo</label>
+        <input type="text" id="codigo" maxlength="10" placeholder="Digite el codigo" oninput="validar('codigo')" required>
+        <br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" maxlength="50" placeholder="Digite el nombre" oninput="validar('nombre')" required pattern="([A-Z]{3,50})">
+        <br><br>
+        <label for="correo">Correo Electronico:</label>
+        <input type="email" id="correo" maxlength="50" placeholder="Digite el correo" oninput="correo" required>
+        <br><br>
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion" maxlength="200" placeholder="Digite la direccion" oninput="direccion" required>
+        <br><br>
+        <tr> 
+                <td>Tipo de vehiculo:</td> 
+                <td> 
+                <select name=tipo id="tipo" required>
+                <option value="">Ninguno
+                <option value="hashback">Hashback
+                <option value="pickup">Pick-Up
+                <option value="camioneta">Camioneta 
+                <option value="sedan">Sedan
+                <option value="deportivo">Deportivo
+                </select> 
+                </td> 
+         </tr>
+         <tr> 
+                <td>Marca de vehiculo:</td> 
+                <td> 
+                <select name=marca id="marca" required>
+                <option value="">Ninguno
+                <option value="mazda">Mazda
+                <option value="mitsubishi">Mitsubishi
+                <option value="toyota">Toyota
+                <option value="honda">Honda
+                <option value="bmw">BMW
+                </select> 
+                </td> 
+         </tr><br><br>
+        <input type="submit" id="enviar" value="Pedido de Cotizacion" onclick="enviarValidar()">
+    </form>
+<script src="Js/bootstrap.min.js"></script>
+<script src="Js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

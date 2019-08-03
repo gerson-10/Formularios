@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solicitud de Empleo</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <script type="text/javascript" src="Js/validarempleo.js"></script>
+    <style>
+        body { background-color: rgb(170, 156, 156); }
+    </style>
+    <style>
+            ul{ list-style:none;}
+            label{
+        width:200px;
+        display:block;
+        margin:10px;
+        float:left;}
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Solicitud de Empleo</h1><a href="index.html"><button><E>REGRESO A MENU</E></button></a>
+        </div>
+    </header>
+    <form align="center" name='form1' onsubmit='return validar()'>
+            <ul><br><br>
+            <label for='nombre'>Nombre</label>
+            <input type='text' id='nombre' name='nombre' required placeholder="Ingrese su nombre"/>
+            </li><br><br><br>
+            <label for='apellido'>Apellido</label>
+            <input type='text' id='apellido' name='apellido' placeholder="opcional"/>
+            </li><br><br><br>
+            <li>
+            <label for='direccion'>Dirección</label>
+            <input type='text' id='direccion' name='direccion' placeholder="Ingrese su direccion"/>
+            </li><br><br>
+            <li>
+            <label for='edad'>Edad</label>
+            <input type='text' id='edad' name='edad' placeholder="Ingrese su edad" />
+            </li><br><br>
+            <li>
+            <label for='telefono'>Telefono</label>
+                <input type='tel' id='telefono' name='telefono' pattern="[0-9]{8,8}" placeholder="Ingrese su telefono" required />
+            </li><br><br>
+            <li>
+            <label for='email'>E-mail</label>
+            <input type='text' id='email' name='email' required placeholder="ingrese su correo"/>
+            </li><br><br>
+            <li>
+            <label for='estudios'>Grado de estudio:</label>
+            <select id='estudios' name='estudios'>
+            <option value=''>Seleccione</option>
+            <option>Ningunos</option>
+            <option>Primaria</option>
+            <option>Basico</option>
+            <option>Diversificado</option>
+            <option>Universitario</option>
+            <option>Cursos</option>
+            </select>
+            </li><br><br>
+            <li>
+            <label>
+            <input type='checkbox' value='SI' id='acepto' checked/>
+            Desea recibir ofertas por correo electronico
+            </label>
+            </li>
+            </ul>
+            <button>ENVIAR SOLICITUD</button>
+    </form>
+<script src="Js/bootstrap.min.js"></script>
+<script src="Js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

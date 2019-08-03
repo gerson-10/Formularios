@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inscripcion y cobro online</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <script type="text/javascript" src="Js/validarinscripcion.js"></script>
+    <style>
+        body { background-color: rgb(170, 156, 156); }
+    </style>
+    <style>
+        ul{ list-style:none;}
+        label{
+    width:200px;
+    display:block;
+    margin:10px;
+    float:left;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Inscripcion a Curso y cobro online</h1><a href="index.html"><button><E>REGRESO A MENU</E>
+            </button><a href="pago_online.html"><button><E>PAGO ONLINE</E></button></a></a>
+        </div>
+    </header>
+    <form align="center" name='form1' onsubmit='return validar()'>
+            <ul><br><br>
+            <label for='nombre'>Nombre</label>
+            <input type='text' id='nombre' name='nombre' required placeholder="Ingrese nombre"/>
+            </li><br><br><br>
+            <li>
+            <label for='direccion'>Dirección</label>
+            <input type='text' id='direccion' name='direccion' placeholder="ejemplo Jutiapa"/>
+            </li><br><br>
+            <li>
+                <label for='usuario'>Usuario</label>
+                <input type='text' id='usuario' name='usuario' required placeholder="ejemplo gramirezh"/>
+                </li><br><br>
+                <label for='password'>Password</label>
+                <input type='password' id='password' name='password' required placeholder="ejemplo ****"/>
+                </li><br><br><br>
+            <li>
+            <li>
+            <label for='edad'>Edad</label>
+            <input type='text' id='edad' name='edad' placeholder="18"/>
+            </li><br><br>
+            <li>
+            <label for='email'>E-mail</label>
+            <input type='text' id='email' name='email' required placeholder="ejemplo@gmail.com"/>
+            </li><br><br>
+            <li>
+            <label for='estudios'>Estudios</label>
+            <select id='estudios' name='estudios' required>
+            <option value=''>Seleccione</option>
+            <option>Ningunos</option>
+            <option>Primarios</option>
+            <option>Basicos</option>
+            <option>Diversificado</option>
+            <option>Universitario</option>
+            </select>
+            </li><br><br>
+            <li>
+            <label>
+            <input type='checkbox' value='SI' id='acepto'/>
+            He leído y acepto las condiciones:
+            </label>
+            </li>
+            </ul>
+            <button>Inscripcion</button>
+    </form>
+<script src="Js/bootstrap.min.js"></script>
+<script src="Js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

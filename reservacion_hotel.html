@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservacion de Hotel</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <script type="text/javascript" src="Js/validarhotel.js"></script>
+    <style>
+        body { background-color: rgb(170, 156, 156); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Reservacion de Hotel</h1><a href="index.html"><button><E>REGRESO A MENU</E></button></a>
+        </div>
+    </header> 
+    <form name="fvalida"> 
+            <table align="center"> 
+            <tr> 
+                   <td>Nombre: </td> 
+                   <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+            </tr><br>
+            
+            <tr> 
+                    <td>Apellido: </td> 
+                    <td><input type="text" name="apellido" size="30" maxlength="100"></td> 
+            </tr>
+            <tr>
+                   <td>Edad: </td> 
+                   <td><input type="text" name="edad" size="3" maxlength="2"></td> 
+            </tr> 
+            <tr> 
+                   <td>Tipo de habitacion:</td> 
+                   <td> 
+                   <select name=tipo>
+                    <option value="Elegir">Elegir
+                   <option value="express">Express 
+                   <option value="sencilla">Sencilla
+                   <option value="doble">Doble
+                   <option value="vip">VIP 
+                   </select> 
+                   </td> 
+            </tr> 
+            <tr> 
+                    <td>Motivo de visita:</td> 
+                    <td> 
+                    <select name=interes> 
+                    <option value="Elegir">Elegir 
+                    <option value="Comercial">Contacto comercial 
+                    <option value="Clientes">Atención al cliente 
+                    <option value="Proveedores">Contacto de proveedores 
+                    <option value="Clientes">Vacaciones
+                    <option value="Clientes">Reunion de trabajo
+                    <option value="Clientes">Visitas familiares
+                    <option value="Clientes">Promocion en la Web
+                    </select> 
+                    </td> 
+             </tr>
+             <tr> 
+                    <td>Metodo de pago</td> 
+                    <td> 
+                        <input type="radio" name="pago" value="" checked> Ninguno
+                        <br>
+                        <input type="radio" name="pago" value="tarjeta"> Tarjeta de credito
+                        <br>
+                        <input type="radio" name="pago" value="efectivo"> Efectivo
+                        <br>
+                        <input type="radio" name="pago" value="socio"> Socio<br>
+                    </td> 
+             </tr> 
+             <tr> 
+                   <td colspan="2" align="center"><input type="button" value="Reservar" onclick="valida_envia()"></td> 
+             </tr> 
+             </table> 
+    </form>
+<script src="Js/bootstrap.min.js"></script>
+<script src="Js/jquery-3.4.1.min.js"></script>
+</body>
+</html>
